@@ -1,9 +1,10 @@
 import './ItemListContainer.css'
+import TituloComponente from './TituloComponente'
 
 export default function ItemListContain() {
     return (
         <>
-        <h1>¡Bienvenidos a Gabby Blinders tienda de bebidas!</h1>
+        <TituloComponente/>
         </>
     )
 }
