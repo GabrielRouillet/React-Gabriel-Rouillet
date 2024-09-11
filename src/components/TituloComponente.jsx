@@ -1,9 +1,9 @@
 import './TituloComponente.css'
 
-export default function TituloComponente(texto) {
+export default function TituloComponente(prop) {
     return (
         <>
-        <h1>{texto.titulo}</h1>
+        <h1>{prop.greeting}</h1>
         </>
     )
 }

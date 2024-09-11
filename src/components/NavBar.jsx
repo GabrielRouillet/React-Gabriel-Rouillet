@@ -7,7 +7,7 @@ export default function Nav(props) {
     return (
         
         <ul className="navbar">
-            <div>
+            <div className='logo'>
                 <IconoComponente/>
             </div>
                 <MenuNav pagina="Inicio"/>

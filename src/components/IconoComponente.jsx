@@ -5,6 +5,7 @@ export default function Icono() {
     return (
         <>
         <img className='iconoComp' src= {icono} alt="icono" />
+        <p className='iconoparrafo'>Gabby Blinders</p>
         </>
     )
 }
