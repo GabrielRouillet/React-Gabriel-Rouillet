@@ -1,9 +1,9 @@
 import './TituloComponente.css'
 
-export default function TituloComponente() {
+export default function TituloComponente(texto) {
     return (
         <>
-        <h1>¡Bienvenidos a Gabby Blinders tienda de bebidas!</h1>
+        <h1>{texto.titulo}</h1>
         </>
     )
 }
