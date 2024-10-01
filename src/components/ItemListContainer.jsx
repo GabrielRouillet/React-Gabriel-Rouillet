@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import ProductList from './ProductList';
 
 const ItemListContainer = () => {
-    const { categoria } = useParams(); // Obtiene la categoría de los parámetros de la URL
+    const { categoria } = useParams();
 
     return (
         <div>
