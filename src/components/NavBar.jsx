@@ -13,21 +13,21 @@ export default function NavBar() {
                 </Link>
             </div>
             <ul>
-                <li>
+                <ul>
                     <Link to="/categorias/bebidas-alcoholicas">
                         <MenuNav pagina="Bebidas Alcohólicas" />
                     </Link>
-                </li>
-                <li>
+                </ul>
+                <ul>
                     <Link to="/categorias/bebidas-no-alcoholicas">
                         <MenuNav pagina="Bebidas No Alcohólicas" />
                     </Link>
-                </li>
-                <li>
+                </ul>
+                <ul>
                     <Link to="/categorias/energizantes">
                         <MenuNav pagina="Energizantes" />
                     </Link>
-                </li>
+                </ul>
                 <CartWidget />
             </ul>
         </nav>
