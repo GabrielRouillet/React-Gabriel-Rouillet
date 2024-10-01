@@ -1,20 +1,35 @@
-import './NavBar.css'
-import MenuNav from './MenuNav'
-import CartWidget from './CartWidget'
-import IconoComponente from './IconoComponente'
+import './NavBar.css';
+import MenuNav from './MenuNav';
+import IconoComponente from './IconoComponente';
+import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
-export default function Nav(props) {
+export default function NavBar() {
     return (
-        
-        <ul className="navbar">
-            <div className='logo'>
-                <IconoComponente/>
+        <nav className="navbar">
+            <div className="logo">
+                <Link to="/">
+                    <IconoComponente />
+                </Link>
             </div>
-                <MenuNav pagina="Inicio"/>
-                <MenuNav pagina="Productos"/>
-                <MenuNav pagina="Nosotros"/>
-                <MenuNav pagina="Contacto"/>
-                <CartWidget/>
-        </ul>
-    )
+            <ul>
+                <li>
+                    <Link to="/categorias/bebidas-alcoholicas">
+                        <MenuNav pagina="Bebidas Alcohólicas" />
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/categorias/bebidas-no-alcoholicas">
+                        <MenuNav pagina="Bebidas No Alcohólicas" />
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/categorias/energizantes">
+                        <MenuNav pagina="Energizantes" />
+                    </Link>
+                </li>
+                <CartWidget />
+            </ul>
+        </nav>
+    );
 }

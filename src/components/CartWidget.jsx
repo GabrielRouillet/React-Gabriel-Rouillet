@@ -1,5 +1,5 @@
 import './CartWidget.css'
-import carrito from '../img/carrito_white.png'
+import carrito from '../../public/img/carrito_white.png'
 
 export default function Cart() {
     return (
