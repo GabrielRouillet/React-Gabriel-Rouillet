@@ -1,4 +1,4 @@
-import { products } from './data';
+import { products } from '../../asyncMock';
 
 export const fetchProducts = async () => {
   return new Promise((resolve) => {
