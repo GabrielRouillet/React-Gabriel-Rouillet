@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Fondo negro */
+    background-color: #000000; /* Fondo negro */
     padding: 10px 20px;
     color: #fff; /* Texto blanco */
+    text-decoration: none
 }
 
 .logo {
@@ -13,39 +14,47 @@
 }
 
 ul {
-    list-style-type: none;
+    text-decoration: none;
     display: flex;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 ul li {
     margin: 0 15px;
+    text-decoration: none
 }
 
 ul li a {
-    color: #fff; /* Enlaces en blanco */
+    color: #000000; /* Enlaces en blanco */
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-ul li a:hover {
-    color: #ccc; /* Color gris claro al pasar el mouse */
+link {
+    text-decoration: none
+}
+
+ul li a{
+    text-decoration: none;
+    color: #130000; /* Color gris claro al pasar el mouse */
+    
 }
 
 .cart-widget {
+    text-decoration: none;
     position: relative;
 }
 
 .cart-dropdown {
+    text-decoration: none;
     position: absolute;
     right: 0;
     top: 40px; /* Ajusta según la altura de la navbar */
     background-color: white; /* Fondo blanco */
     color: black; /* Texto negro */
-    border: 1px solid #ccc; /* Borde gris claro */
+    border: 1px solid #000000; /* Borde gris claro */
     padding: 10px;
     z-index: 10;
     width: 200px; /* Ancho del dropdown */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, )
     }

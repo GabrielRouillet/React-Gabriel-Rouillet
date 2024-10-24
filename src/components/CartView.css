@@ -1,14 +1,31 @@
-.cart-container {
+/* CartView.css */
+
+.cart-view {
     padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 600px;
-    margin: 20px auto; 
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    border: 1px solid #ccc; /* Bordes */
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Centra el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+h2 {
+    text-align: center; /* Centra el título */
+}
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
 }
 
 .cart-item {
-    margin: 10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Espacio entre el nombre, precio y cantidad */
+    padding: 10px;
+    border-bottom: 1px solid #eee; /* Línea debajo de cada producto */
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* Elimina la línea del último elemento */
 }

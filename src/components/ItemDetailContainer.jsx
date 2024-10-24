@@ -32,7 +32,7 @@ const ItemDetailContainer = () => {
         <div className="item-detail-container">
             <h2>{producto.nombre}</h2>
             <img src={producto.img} alt={producto.nombre} />
-            <p>{producto.descripcion}</p>
+            <h3>{producto.descripcion}</h3>
             <p>Precio: ${producto.precio}</p>
             <ItemQuantitySelector cantidad={cantidad} setCantidad={setCantidad} />
             <AddItemButton onAdd={handleAdd} />
