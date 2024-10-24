@@ -1,3 +1,4 @@
+// NavBar.jsx
 import './NavBar.css';
 import MenuNav from './MenuNav';
 import IconoComponente from './IconoComponente';
@@ -13,21 +14,15 @@ export default function NavBar() {
                 </Link>
             </div>
             <ul>
-                <ul>
-                    <Link to="/categorias/bebidas-alcoholicas">
-                        <MenuNav pagina="Bebidas Alcohólicas" />
-                    </Link>
-                </ul>
-                <ul>
-                    <Link to="/categorias/bebidas-no-alcoholicas">
-                        <MenuNav pagina="Bebidas No Alcohólicas" />
-                    </Link>
-                </ul>
-                <ul>
-                    <Link to="/categorias/energizantes">
-                        <MenuNav pagina="Energizantes" />
-                    </Link>
-                </ul>
+                <Link to="/categorias/bebidas-alcoholicas">
+                    <MenuNav pagina="Bebidas Alcohólicas" />
+                </Link>
+                <Link to="/categorias/bebidas-no-alcoholicas">
+                    <MenuNav pagina="Bebidas No Alcohólicas" />
+                </Link>
+                <Link to="/categorias/energizantes">
+                    <MenuNav pagina="Energizantes" />
+                </Link>
                 <CartWidget />
             </ul>
         </nav>

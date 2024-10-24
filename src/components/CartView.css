@@ -1,0 +1,14 @@
+.cart-container {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto; 
+}
+
+.cart-item {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}

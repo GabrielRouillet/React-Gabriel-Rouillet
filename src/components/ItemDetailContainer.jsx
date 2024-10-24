@@ -1,41 +1,45 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { fetchProducts } from './mockApi';
+import React, { useState, useContext, useEffect } from 'react';
 import './ItemDetailContainer.css';
-import ContadorComponente from './ContadorComponente';
-
+import { useParams } from 'react-router-dom';
+import ItemQuantitySelector from './ItemQuantitySelector';
+import AddItemButton from './AddItemButton';
+import { CartContext } from './CartContext';
+import { products } from '/asyncMock';
 
 const ItemDetailContainer = () => {
     const { id } = useParams();
-    const [product, setProduct] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const { addToCart } = useContext(CartContext);
+    const [producto, setProducto] = useState(null);
+    const [cantidad, setCantidad] = useState(1);
 
     useEffect(() => {
-        const loadProduct = async () => {
-            const products = await fetchProducts();
-            const foundProduct = products.find((product) => product.id === parseInt(id));
-            setProduct(foundProduct);
-            setLoading(false);
-        };
-
-        loadProduct();
+        const foundProduct = products.find(prod => prod.id === parseInt(id));
+        setProducto(foundProduct);
     }, [id]);
 
-    if (loading) {
-        return <div>Cargando detalles del producto...</div>;
+    const handleAdd = () => {
+        if (producto) {
+            addToCart(producto, cantidad);
+            setCantidad(1);
+        }
+    };
+
+    if (!producto) {
+        return <p>Cargando...</p>;
     }
 
     return (
-        <div className="detail-container">
-            <h1 className="product-name">{product.nombre}</h1>
-            <div className="image-container">
-                <img src={product.img} alt={product.nombre} className="product-image" />
-            </div>
-            <p className="product-price">Precio: ${product.precio}</p>
-            <p className="product-description">{product.descripcion}</p>
-            <div><ContadorComponente></ContadorComponente></div>
+        <div className="item-detail-container">
+            <h2>{producto.nombre}</h2>
+            <img src={producto.img} alt={producto.nombre} />
+            <p>{producto.descripcion}</p>
+            <p>Precio: ${producto.precio}</p>
+            <ItemQuantitySelector cantidad={cantidad} setCantidad={setCantidad} />
+            <AddItemButton onAdd={handleAdd} />
         </div>
     );
 };
 
 export default ItemDetailContainer;
+
+

@@ -1,0 +1,19 @@
+.add-item-button {
+    background-color: rgba(8, 133, 4, 0.692);
+    color: white;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    margin: 5px;
+}
+
+.add-item-button:hover {
+    background-color: gray;
+}
+
+.add-item-button:active {
+    transform: scale(0.95);
+}
