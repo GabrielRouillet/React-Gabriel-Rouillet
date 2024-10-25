@@ -1,8 +1,8 @@
-import './NavBar.css';
 import MenuNav from './MenuNav';
 import IconoComponente from './IconoComponente';
 import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
+import './NavBar.css';
 
 export default function NavBar() {
     return (
