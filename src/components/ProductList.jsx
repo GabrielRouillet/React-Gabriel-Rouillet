@@ -10,9 +10,7 @@ const ProductList = ({ categoryId }) => {
     useEffect(() => {
         const loadProducts = async () => {
             const products = await fetchProducts();
-            const filteredProducts = categoryId
-                ? products.filter(product => product.categoria === categoryId)
-                : products;
+            const filteredProducts = categoryId ? products.filter(product => product.categoria === categoryId) : products;
             setItems(filteredProducts);
             setLoading(false);
         };

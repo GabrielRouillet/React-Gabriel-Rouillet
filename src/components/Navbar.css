@@ -2,10 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000; /* Fondo negro */
+    background-color: #000000;
     padding: 10px 20px;
-    color: #fff; /* Texto blanco */
+    color: #fff;
     text-decoration: none
+}
+
+a{
+    text-decoration: none;
 }
 
 .logo {
@@ -27,17 +31,13 @@ ul li {
 }
 
 ul li a {
-    color: #000000; /* Enlaces en blanco */
+    color: #000000;
     text-decoration: none;
-}
-
-link {
-    text-decoration: none
 }
 
 ul li a{
     text-decoration: none;
-    color: #130000; /* Color gris claro al pasar el mouse */
+    color: #130000;
     
 }
 
@@ -50,11 +50,11 @@ ul li a{
     text-decoration: none;
     position: absolute;
     right: 0;
-    top: 40px; /* Ajusta según la altura de la navbar */
-    background-color: white; /* Fondo blanco */
-    color: black; /* Texto negro */
-    border: 1px solid #000000; /* Borde gris claro */
+    top: 40px; 
+    background-color: white;
+    color: black;
+    border: 1px solid #000000; 
     padding: 10px;
     z-index: 10;
-    width: 200px; /* Ancho del dropdown */
+    width: 200px;
     }

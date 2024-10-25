@@ -1,34 +1,34 @@
 .item-detail-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
+    align-items: center; 
+    justify-content: center; 
     padding: 20px;
-    background-color: #fff; /* Fondo blanco */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-    max-width: 400px; /* Ancho máximo de la tarjeta */
-    margin: 20px auto; /* Margen automático para centrar la tarjeta */
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    max-width: 400px; 
+    margin: 20px auto; 
 }
 
 .item-detail-container img {
-    max-width: 100%; /* Imágenes responsivas */
+    max-width: 100%; 
     height: auto;
-    border-radius: 8px; /* Bordes redondeados en la imagen */
+    border-radius: 8px;
 }
 
 .item-detail-container h2 {
     margin: 15px 0;
-    color: #333; /* Texto oscuro */
-    text-align: center; /* Centrar el título */
+    color: #333; 
+    text-align: center; 
 }
 
 .item-detail-container p {
-    color: #069e0d; /* Texto gris */
+    color: #069e0d; 
     margin: 5px 0;
-    text-align: center; /* Centrar el texto de la descripción */
+    text-align: center; 
 }
 
 .item-detail-container .quantity-selector {
-    margin: 10px 0; /* Espaciado entre elementos */
+    margin: 10px 0; 
 }

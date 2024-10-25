@@ -1,4 +1,3 @@
-// NavBar.jsx
 import './NavBar.css';
 import MenuNav from './MenuNav';
 import IconoComponente from './IconoComponente';

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import './ItemQuantitySelector.css';
 
 export default function ItemQuantitySelector({ cantidad, setCantidad }) {
