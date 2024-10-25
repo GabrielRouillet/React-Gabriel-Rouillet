@@ -1,11 +1,10 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     background-color: #000000;
     padding: 10px 20px;
     color: #fff;
-    text-decoration: none
 }
 
 a{
@@ -13,12 +12,12 @@ a{
 }
 
 .logo {
+    padding-right: 10%;
     font-size: 24px;
     font-weight: bold;
 }
 
 ul {
-    text-decoration: none;
     display: flex;
     margin: 0;
     padding: 0;
@@ -44,6 +43,7 @@ ul li a{
 .cart-widget {
     text-decoration: none;
     position: relative;
+    padding-left: 10%;
 }
 
 .cart-dropdown {

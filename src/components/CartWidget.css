@@ -1,7 +1,6 @@
 .cart-widget {
-    position: relative;
     display: flex;
-    
+flex-direction: row;
 }
 
 .cart-button {

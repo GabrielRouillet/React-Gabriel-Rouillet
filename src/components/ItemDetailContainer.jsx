@@ -5,6 +5,7 @@ import ItemQuantitySelector from './ItemQuantitySelector';
 import AddItemButton from './AddItemButton';
 import { CartContext } from './CartContext';
 import { products } from '/asyncMock';
+import Swal from 'sweetalert2';
 
 const ItemDetailContainer = () => {
     const { id } = useParams();
@@ -21,7 +22,14 @@ const ItemDetailContainer = () => {
         if (producto) {
             addToCart(producto, cantidad);
             setCantidad(1);
-        }
+            
+            Swal.fire({
+                title: '¡Producto agregado al carrito!',
+                icon: 'success',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        };
     };
 
     if (!producto) {

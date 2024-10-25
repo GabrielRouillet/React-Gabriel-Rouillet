@@ -9,7 +9,7 @@ const CartWidget = () => {
     return (
         <div className="cart-widget">
             <Link to="/cart" className="cart-button">
-                🛒 ({cart.length})
+                🛒({cart.length})
             </Link>
         </div>
     );
