@@ -6,6 +6,7 @@ import CartView from "./components/CartView";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TituloComponente from "./components/TituloComponente";
 import { CartProvider } from './components/CartContext';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
           <Route path="/item/:id" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<CartView />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </CartProvider>
+    
   );
 }
 
