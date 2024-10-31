@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { CartContext } from './CartContext';
 import Swal from 'sweetalert2';
-import './CartView.css';
+import './Checkout.css';
 
-const CartView = () => {
+const Checkout = () => {
     const { cart, removeFromCart } = useContext(CartContext);
     const [formData, setFormData] = useState({
         nombre: '',
@@ -148,4 +148,4 @@ const CartView = () => {
     );
 };
 
-export default CartView;
+export default Checkout;
